@@ -17,4 +17,14 @@ public class MasterController : MonoBehaviour {
 	{
 		isPaused = false;
 	}
+
+	private void Update()
+	{
+		// If the escape key is pressed
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			// Quit the game
+			Application.Quit();
+		}
+	}
 }
